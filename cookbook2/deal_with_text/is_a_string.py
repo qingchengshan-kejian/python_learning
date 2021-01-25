@@ -1,4 +1,5 @@
 #!/usr/bin/python
+
 '''
 Summary.
 Description
@@ -6,7 +7,7 @@ Description
 
 
 def isAString(anobj):
-	return isinstance(anobj, str)
+    return isinstance(anobj, str)
 
 
 stringobj = "hello world"
