@@ -7,7 +7,7 @@ import re
 
 comment = re.compile(r'/\*(.*?)\*/')
 text1 = '/* this is a comment */'
-text2 = '''/* this is a \n
+text2 = '''/* this is a 
             multiline comment */
         '''
 print(comment.findall(text1))
