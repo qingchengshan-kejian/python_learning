@@ -5,6 +5,7 @@
 from functools import wraps, partial
 import logging
 
+
 # Utility decorator to attatch a function as an attribute of obj
 def attatch_wrapper(obj, func=None):
     if func is None:
@@ -33,7 +34,7 @@ def logged(level, name=None, message=None):
         # Attatch setter functions
         @attatch_wrapper(wrapper)
         def set_level(newlevel):
-            nonlocal level 
+            nonlocal level
             level = newlevel
 
         @attatch_wrapper(wrapper)
