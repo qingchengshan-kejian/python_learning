@@ -4,4 +4,4 @@
 
 #Whitespace stripping
 s = '    hello world   \n'
-print(s.strip( ))
+print(s.strip( )) 
