@@ -14,7 +14,7 @@ print(filename.startswith('file:'))
 url = 'http://www.python.org'
 print(url.startswith('http:'))
 
-filenames = os.listdir('.')
+filenames = os.listdir('..')
 print(filenames)
 
 list = [name for name in filenames if name.endswith(('.c', '.h'))]

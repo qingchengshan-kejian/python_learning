@@ -11,7 +11,7 @@ print(s)
 
 # Determine if any .py files exists in a directory.
 
-files = os.listdir('.') # dirname
+files = os.listdir('..') # dirname
 if any(name.endswith('.py') for name in files):
     print('There be python!')
 else:
