@@ -1,0 +1,1 @@
+# Avoiding Repetitive Property Methods
