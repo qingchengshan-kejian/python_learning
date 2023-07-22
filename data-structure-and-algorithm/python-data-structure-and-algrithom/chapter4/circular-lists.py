@@ -7,7 +7,7 @@ class Node:
         return str(self.data)
 
 
-class SinglyLinkedList:
+class CircularList:
     def __init__(self):
         self.tail = None
         self.head = None
@@ -59,5 +59,28 @@ class SinglyLinkedList:
             prev = current
             current = current.next
 
+    def iter(self):
+        # 这是一个生成器，生成一个可迭代对象
+        if self.head == self.tail and not self.head:
+            yield "no element"
+        elif self.head == self.tail and self.head:
+            yield self.tail.data
+        else:
+            yield self.tail.data
+            current = self.tail.next
+            while current != self.tail:
+                val = current.data
+                current = current.next
+                yield val
 
-words = Circur
+words = CircularList()
+words.append('egg')
+words.append('ham')
+words.append('spam')
+
+counter = 0
+for word in words.iter():
+    print(word)
+    counter += 1
+    if counter > 1000:
+        break
